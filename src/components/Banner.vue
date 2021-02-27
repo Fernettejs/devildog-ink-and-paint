@@ -22,6 +22,14 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.banner:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .text-box{

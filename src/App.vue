@@ -3,7 +3,6 @@
     <Header />
     <Banner />
     <About />
-    <Foot />
   </div>
 </template>
 
@@ -11,7 +10,11 @@
 import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import About from './components/About.vue'
-import Foot from './components/Foot.vue'
+// import Tawk from 'vue-echo'
+  
+// Vue.use(Tawk, {
+//     tawkSrc: 'https://embed.tawk.to/6038be47385de407571a4c78/1eveqehid'
+// })
 
 export default {
   name: 'App',
@@ -19,7 +22,6 @@ export default {
     Header,
     Banner,
     About,
-    Foot
   }
 }
 </script>
@@ -38,8 +40,11 @@ export default {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    --primary-color:#cc0102;
-    --secondary-color:#4d4a4a;
+    --primary-color:#8b0000;
+    --secondary-color:#202020;
+    --blue-color:#3C3B6E;
+    --white-color:#FEFEFE;
+    --gray-color:#CECECE;
 }
 html {
     scroll-padding-top: 118px; /* height of sticky header */

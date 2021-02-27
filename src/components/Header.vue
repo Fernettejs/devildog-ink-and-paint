@@ -1,62 +1,46 @@
 <template>
     <header>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu-left">
-            <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-        </ul>
-            <a href="#home" class="logo">
-                <img id="logo" src="../assets/images/logo-white.png" alt="logo">
-            </a>
-        <ul class="menu-right">
-            <div class="subnav">
-                <button class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                  <a href="airbrush.html">Airbrush</a>
-                  <a href="#tattoo">Tattoo</a>
-                </div>
-            </div>
-            <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
-            <a href="#contact" onclick="toggleMenu();" class="btn">Contact</a>
-            <!-- <li><a href="#contact" onclick="toggleMenu();">Contact</a></li> -->
-        </ul>
+        <div class="toggle" @click="toggleMenu();"></div>
+          <ul class="menu-left">
+              <li><a href="index.html" @click="toggleMenu();">Home</a></li>
+              <li><a href="#about" @click="toggleMenu();">About</a></li>
+          </ul>
+              <img ref="logo" class="logo" src="../assets/images/logo-white.png" alt="logo">
+              <a  href="#home" ></a>
+          <ul class="menu-right">
+              <div class="subnav">
+                  <button class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="airbrush.html">Airbrush</a>
+                    <a href="#tattoo">Tattoo</a>
+                  </div>
+              </div>
+              <li><a href="#testimonials" @click="toggleMenu();">Testimonials</a></li>
+              <a href="#contact" @click="toggleMenu();" class="btn">Contact</a>
+              <!-- <li><a href="#contact" @click="toggleMenu();">Contact</a></li> -->
+          </ul>
     </header>
 </template>
 
 <style scoped>
-#logo {
-    width: 160px;
-}
-header{
-    position: relative;
-    top: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;    
+
+header {
+    border-bottom: 2px solid var(--primary-color);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    transition: 0.5s;
-    text-align: center;
-    background: rgb(77, 74, 74, .9) ;
-
+    height: 160px;
+    background: var(--secondary-color);
 }
-
-header.sticky{
-    background: rgb(77, 74, 74, .9) ;
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0,0.1);
-}
-header.sticky .logo{
-    color: #111;
-    width: 132px;
-    transition: 2.5s;
+.logo {
+    height: 150px;
 }
 header ul{
     position: relative;
     display: flex;
 }
-
+.menu-left {
+  flex: 2;
+}
 header ul li{
     position: relative;
     list-style: none;
@@ -72,7 +56,6 @@ header a{
 header.sticky ul li a{
 color: #fff;
 }
-
 
 /*  */
 /*  */
@@ -132,18 +115,27 @@ color: #fff;
 </style>
 
 <script>
-export default {
-    // Sticky Banner JavaScript
+import { TimelineLite } from 'gsap'
+export default { 
+  mounted() { 
+    const { logo } = this.$refs
+    const timeline = new TimelineLite() 
+    
+    timeline.from(logo, {duration: 2, y: '-100%', ease: 'bounce'})
+  } 
+} 
 
-// window.addEventListener('scroll', function(){
-//     var header = document.querySelector('header');
-//     header.classList.toggle('sticky', window.scrollY > 0);
-// });
+// import gsap from 'gsap'
 
-// function toggleMenu(){
-//     var menuToggle = document.querySelector('.toggle');
-//     var menu = document.querySelector('.menu');
-//     menuToggle.classList.toggle('active')
-//     menu.classList.toggle('active')
-}
+// export default {
+//   name: "Header",
+//   methods: {
+//     function(){
+//       gsap.from('.logo', {duration: 2, y: '-100%', ease: 'bounce'})
+//     },
+//   funtion() {
+//     console.log("I hope this works.")
+//   }
+//   }
+// }
 </script>
