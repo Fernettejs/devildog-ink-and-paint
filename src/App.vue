@@ -6,9 +6,7 @@
     <Services />
     <Contact />
     <Footer />
-
-
-
+    <router-view />
   </div>
 </template>
 
@@ -33,7 +31,7 @@ export default {
     About,
     Services,
     Contact,
-    Footer
+    Footer,
   }
 }
 </script>

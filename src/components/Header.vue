@@ -13,6 +13,8 @@
     <div class="topnav-left">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
+      <router-link to="/tattoos">Tattoos</router-link>
+
     </div>
 
     <!-- Right-aligned links -->
@@ -67,7 +69,7 @@
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.jpg);
   background-size: cover;
   overflow: hidden;
-  height: 140px;
+  height: 160px;
   font-size: 32px;
   border: 3px solid white;
 }
