@@ -3,6 +3,8 @@
     <Header />
     <Banner />
     <About />
+    <Services />
+
   </div>
 </template>
 
@@ -10,6 +12,7 @@
 import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import About from './components/About.vue'
+import Services from './components/Services.vue'
 // import Tawk from 'vue-echo'
   
 // Vue.use(Tawk, {
@@ -22,6 +25,7 @@ export default {
     Header,
     Banner,
     About,
+    Services
   }
 }
 </script>
@@ -40,21 +44,21 @@ export default {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-align: center;
     --primary-color:#8b0000;
     --secondary-color:#202020;
     --blue-color:#3C3B6E;
     --white-color:#FEFEFE;
     --gray-color:#CECECE;
 }
-html {
-    scroll-padding-top: 118px; /* height of sticky header */
-  }
+
 section {
     padding: 100px;
 }
 
 h2 {
     font-size: 3em;
+    color: white;
 }
 
 p {

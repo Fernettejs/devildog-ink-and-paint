@@ -8,7 +8,7 @@
                 <div class="heading">
                     <h2>The Artist</h2>
                 </div>
-                <p id="the-artist">Meet Joe , a Marine Corps Purple Heart veteran. Joe served in Fallujah, Iraq in 2006. On Dec. 28th he was shot twice by sniper fire and severely wounded. After a very long recovery, Joe started to draw and paint as therapy for his arm, hand, and mind. He uses art as a way to help himself and others. Through art like tattooing, Devildog Ink & Paint llc. provides Pain Therapy (as Joe's veteran brothers and sisters call it). Its a way to get your mind off things and to be in a comfortable place where you can enjoy the process of getting a great piece of art. Joe also does airbrush projects as a way to keep his mind busy. That is the Paint Therapy Art. For the ones that cant afford the mainstream graphics artist for custom work. Joe uses his time to create the best one of a kind custom art piece that he can produce. Devildog Ink & Paint llc. specializes in veteran and patriotic themes. Combat scenes, memorials, American Flags, and much more. Custom paint by hand or air brush on most surfaces or items such as motorcycle fenders, gas tanks, fairings, saddle bags, guitars, mailboxes, snowmobiles, helmets, hard hats, hockey masks, rifles, canvas, walls, and many other items. Check out Devildog Ink & Paint llc. Portfolio page to see some of Joe's work.
+                <p id="the-artist">Meet Joe, a Marine Corps Purple Heart veteran. Joe served in Fallujah, Iraq in 2006. On Dec. 28th he was shot twice by sniper fire and severely wounded. After a very long recovery, Joe started to draw and paint as therapy for his arm, hand, and mind. He uses art as a way to help himself and others. Through art like tattooing, Devildog Ink & Paint llc. provides Pain Therapy (as Joe's veteran brothers and sisters call it). Its a way to get your mind off things and to be in a comfortable place where you can enjoy the process of getting a great piece of art. Joe also does airbrush projects as a way to keep his mind busy. That is the Paint Therapy Art. For the ones that cant afford the mainstream graphics artist for custom work. Joe uses his time to create the best one of a kind custom art piece that he can produce. Devildog Ink & Paint llc. specializes in veteran and patriotic themes. Combat scenes, memorials, American Flags, and much more. Custom paint by hand or air brush on most surfaces or items such as motorcycle fenders, gas tanks, fairings, saddle bags, guitars, mailboxes, snowmobiles, helmets, hard hats, hockey masks, rifles, canvas, walls, and many other items. Check out Devildog Ink & Paint llc. Portfolio page to see some of Joe's work.
                 </p>
             </div>
         </div>
@@ -16,12 +16,12 @@
             <div class="content">
                 <div class="social-box" id="youtube-box">
                     <a href="https://www.youtube.com/channel/UCsp7n4jSu-uMAbMqL-QHJ9A" target="_blank">
-                        <img src="resources/images/youtube-icon.png" alt="">
+                        <img src="../assets/images/youtube-icon.png" alt="">
                     </a>
                 </div>
                 <div class="social-box" id="ig-box">
                     <a href="https://www.instagram.com/devildog_inkandpaintllc/" target="_blank">
-                        <img src="resources/images/ig-icon.png" alt="">
+                        <img src="../assets/images/ig-icon.png" alt="">
                     </a>
                 </div>
             </div>
@@ -34,21 +34,21 @@
     background: var(--secondary-color);
 }
 .about .img{
-    border: 3px solid var(--primary-color);
+    border: 3px solid white;
+    border-radius: 5px;
 }
 .heading{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    color: #000;
-    text-shadow: 0px 0px 6px rgb(212, 212, 212);
-    -webkit-text-stroke: .2px rgb(51, 51, 51);
-    outline: #000;
+    color: #fff;
     text-decoration: none;
+    border: 3px solid white;
+    border-radius: 5px;
 }
 .heading h2{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 30px;    
 }
 .content{
     display: flex;
@@ -57,6 +57,9 @@
 .contentBox{
     padding: 30px;
     display: inline;
+    background: var(--blue-color);
+    border: 3px solid white;
+    border-radius: 5px;
 
 }
 .contentBox h3{
@@ -85,6 +88,9 @@ img{
     flex-direction: row;
     background-color: var(--secondary-color);
     margin-top: -50px;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 20px;
 }
 .social-box{
     height: 100px;
@@ -100,5 +106,76 @@ img{
     border-radius: 100px;
     background-color: var(--primary-color);
     display: block;
+}
+
+.social img {
+    filter: invert(100%);
+}
+
+@media (max-width: 991px){
+    
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .contentBox h3{
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .w50{
+        margin-bottom: 20px;
+    }
+    .services .content .servicesBox{
+        margin: 10px;
+    }
+    .work .content .workBox {
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonials .content .testimonialsBox {
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: rgb(244,198, 137);
+    }
+        .testimonials .content .testimonialsBox h3 {
+            margin-top: 20px;
+    }
+    .contactInfo {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:600px){
+    header,
+    header.sticky{
+        padding: 20px 20px;
+        z-index: 1000;
+    }
+    .banner{
+        padding: 150px 20px 100px;
+    }
+    section{
+        padding: 100px 20px;
+    }
 }
 </style>

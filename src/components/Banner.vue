@@ -2,7 +2,7 @@
     <section class="banner center" id="home">
             <h1>DEVILDOG INK & PAINT llc.</h1>
                 <h4>Custom Art Studio</h4>
-                <a href="#contact" class="btn">Get some shit done</a>
+                <a ref="btn" href="#contact" class="btn">Get some shit done</a>
     </section>
 </template>
 
@@ -13,16 +13,16 @@
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(0, 0, 0, 0.55), 
-      rgba(0, 0, 0, 0.55)
-    ), url(../assets/images/banner.jpg
-    );
+      rgba(0, 0, 0, 0.60), 
+      rgba(0, 0, 0, 0.60)
+    ), url(../assets/images/banner.jpg);
     background-size: cover;
     background-position: center;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 3px solid white;
+
 }
 
 .banner:hover {
@@ -53,13 +53,12 @@
 }
 
 .btn{
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../assets/images/American-flag-2a.jpg);
     position: relative;
-    background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /* background: var(--primary-color); */
     display: inline-block;
     color: #fff;
-    margin-top: 20px;
-    padding: 10px 30px;
+    margin-top: 40px;
+    padding: 20px 50px;
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
@@ -67,5 +66,22 @@
     font-weight: 500;
     cursor: pointer;
     border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: -6px 6px 25px #888888;
+
+
 }
+
 </style>
+
+<script>
+import { TimelineLite } from 'gsap'
+export default { 
+  mounted() { 
+    const { btn } = this.$refs
+    const timeline = new TimelineLite() 
+    
+    timeline.from(btn, {duration: 2, x: '-500%', ease: 'bounce', delay: 2})
+  }
+} 
+</script>

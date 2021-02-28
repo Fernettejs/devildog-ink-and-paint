@@ -113,6 +113,8 @@ background: linear-gradient(90deg, rgba(15,15,15,1) 23%, rgba(121,9,9,1) 50%, rg
 
 <script>
 export default {
+    mounted() { 
+
     // 
 //IMAGE GRID CHANGER 
 // 
@@ -149,6 +151,7 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace("active", "");
     this.className += "active";
   });
+}
 }
 }
 </script>
