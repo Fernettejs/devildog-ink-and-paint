@@ -68,8 +68,6 @@
     border-radius: 10px;
     border: 5px solid white;
     box-shadow: -6px 6px 25px #888888;
-
-
 }
 
 </style>

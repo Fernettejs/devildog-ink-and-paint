@@ -12,13 +12,13 @@
     <!-- Left-aligned links (default) -->
     <div class="topnav-left">
       <a href="#home" class="active">Home</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
     </div>
 
     <!-- Right-aligned links -->
     <div class="topnav-right">
       <a class="subnav">
-        <button class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
+        <button href="#services" class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
         <div class="subnav-content">
           <a href="airbrush.html">Airbrush</a>
           <a href="tattoo.html">Tattoo</a>

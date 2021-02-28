@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "gsap": "^3.6.0",
     "vue": "^2.6.11",
     "vue-echo": "^1.0.2",
     "vue-tawk": "^1.0.1"

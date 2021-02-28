@@ -4,6 +4,10 @@
     <Banner />
     <About />
     <Services />
+    <Contact />
+    <Footer />
+
+
 
   </div>
 </template>
@@ -13,6 +17,8 @@ import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import About from './components/About.vue'
 import Services from './components/Services.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 // import Tawk from 'vue-echo'
   
 // Vue.use(Tawk, {
@@ -25,7 +31,9 @@ export default {
     Header,
     Banner,
     About,
-    Services
+    Services,
+    Contact,
+    Footer
   }
 }
 </script>
@@ -70,4 +78,22 @@ p {
     height: 6px;
     background: black;
 }
+.btn{
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(./assets/images/American-flag-2a.jpg);
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-top: 40px;
+    padding: 20px 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: -6px 6px 25px #888888;
+}
+
 </style>
