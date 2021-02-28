@@ -117,13 +117,13 @@ img{
 </style>
 
 <script>
-// import { TimelineLite } from 'gsap'
-// export default { 
-//   mounted() { 
-//     const { card } = this.$refs
-//     const timeline = new TimelineLite() 
+import { TimelineLite } from 'gsap'
+export default { 
+  mounted() { 
+    const timeline = new TimelineLite() 
     
-//     timeline.from(card, {duration: 1, y: '-500%', ease: 'bounce', delay: 0})
-//   }
-// } 
+    timeline
+        .from('.servicesBox', {duration: 1, opacity: 0, delay: 2, stagger: .5})
+  }
+} 
 </script>
