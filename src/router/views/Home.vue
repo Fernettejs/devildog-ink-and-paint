@@ -4,7 +4,7 @@
     <Banner />
     <About />
     <Services />
-    <Contact />
+    <Projects />
     <Footer />
   </div>
 </template>
@@ -14,7 +14,7 @@ import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import About from './components/About.vue'
 import Services from './components/Services.vue'
-import Contact from './components/Contact.vue'
+import Projects from './components/Projects.vue'
 import Footer from './components/Footer.vue'
 // import Tawk from 'vue-echo'
   
@@ -29,7 +29,7 @@ export default {
     Banner,
     About,
     Services,
-    Contact,
+    Projects,
     Footer,
   }
 }

@@ -1,4 +1,5 @@
 <template>
+<!-- CHANGE SIDEBAR TO COME DOWN FROM TOP INSTEAD OF SIDE -->
   <div class="sidebar">
     <div
       class="sidebar-backdrop"
@@ -35,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .menu {
   list-style-type: none;
 }

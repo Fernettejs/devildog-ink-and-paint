@@ -9,7 +9,7 @@
       <li><a href="#about" onclick="toggleMenu();">About</a></li>
       <li><a href="#services" onclick="toggleMenu();">Services</a></li>
       <li><a href="#project" onclick="toggleMenu();">Projects</a></li>
-      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      <li><a href="#footer" onclick="toggleMenu();">Contact</a></li>
     </ul>
 
   </header>
