@@ -8,7 +8,7 @@
         Vue, JavaScript, HTML and CSS are my daily users. I use these for
         personal projects and static websites for clients. I love building with
         React. I have built with it before and am getting back into it. I am
-        also currently building more with Ruby on Rails. I love front end
+        also currently building more with Ruby on Rails. I'm fascinated by front end
         architecture and design. I find myself wanting to do more with backend
         everyday though. I have been doing this for around 3 years and don't see
         ever stopping! There is always something to learn and that's what I love

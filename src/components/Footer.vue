@@ -3,7 +3,7 @@
     <h2>Get in touch</h2>
     <h5>
       I love learning and trying new projects. If you feel that we are a good
-      match send me a message!
+      match, send me a message!
     </h5>
     <Social />
   </section>
