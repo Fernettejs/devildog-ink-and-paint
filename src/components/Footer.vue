@@ -8,7 +8,7 @@
 
 <style scoped>
 section {
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.jpg);
+  background: var(--secondary-color);
   background-size: cover;
 }
 

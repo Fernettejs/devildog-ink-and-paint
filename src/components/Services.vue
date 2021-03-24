@@ -7,25 +7,25 @@
         <div class="content">
             <div ref="card" class="servicesBox">
                 <a href="airbrush.html">
-                    <img src="../assets/images/bandana.jpg" alt="">
+                    <img src="../assets/images/TableTop.jpg" alt="">
                 </a>
                 <h2>Custom Airbrush</h2>
             </div>
             <div ref="card" class="servicesBox">
                 <a href="tattoo.html">
-                    <img src="../assets/images/eagle.jpg" alt="">
+                    <img src="../assets/images/TableTop.jpg" alt="">
                 </a>
                 <h2>Tattoos</h2>
             </div>
             <div ref="card" class="servicesBox">
                 <a href="murals.html">
-                    <img src="../assets/images/gunners-mate.jpg" alt="">
+                    <img src="../assets/images/TableTop.jpg" alt="">
                 </a>
                 <h2>Wall Murals</h2>
             </div>
             <div ref="card" class="servicesBox">
                 <a href="canvas.html">
-                    <img src="../assets/images/m4.jpg" alt="">
+                    <img src="../assets/images/TableTop.jpg" alt="">
                 </a>
                 <h2>Canvas Paintings</h2>
             </div>
@@ -35,7 +35,7 @@
 
 <style scoped>
 .services {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.jpg);
+    background: var(--secondary-color);
     background-size: cover;
 }
 

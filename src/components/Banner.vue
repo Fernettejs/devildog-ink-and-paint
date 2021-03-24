@@ -1,75 +1,107 @@
 <template>
-    <section class="banner center" id="home">
-            <h1>DEVILDOG INK & PAINT llc.</h1>
-                <h4>Custom Art Studio</h4>
-                <a ref="btn" href="#contact" class="btn">Get some shit done</a>
-    </section>
+<section class="banner" id="home">
+    <div class="textbox">
+        <img id="profile-image" src="../assets/images/me-profile.jpg" alt="ME">
+        <h1>Joe Fernette</h1>
+        <h4>Web Developer</h4>
+        <!-- <p>Using Vue, JavaScript, </p> -->
+        <!-- START ABOVE HERE -->
+        <h3>Welcome to my
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "coding journey.","creations.", "life."]'></span>
+          </h3>        
+          <a href="#project" class="btn">My Projects</a>
+    </div>
+</section>
 </template>
 
 <style scoped>
+#profile-image {
+  height: 250px;
+  border-radius: 100%;
+}
 .banner {
-    position: relative;
-    min-height: 100vh;
-    background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(0, 0, 0, 0.60), 
-      rgba(0, 0, 0, 0.60)
-    ), url(../assets/images/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    border-bottom: 3px solid white;
-
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(24, 39, 54, 0.65), rgba(25, 30, 53, 0.65)),
+    url(../assets/images/TableTop.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
-.banner:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+.banner h2 {
+  font-size: 3em;
+  color: white;
+  font-weight: 500;
+  line-height: 1.2em;
 }
-
-.text-box{
-    align-items: center;
-    text-align: center;
+.banner h2 span {
+  font-size: 1.5em;
 }
-
-.banner h1{
-    font-size: 4em;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1.2em;
-    margin-top: 300px;
+.banner h3 {
+  font-size: 1.5em;
+  color: var(--light-color);
+  font-weight: 500;
 }
-
 .banner h4 {
-    font-size: 1.2em;
-    color: #fff;
-    font-weight: 500;
-    text-transform: uppercase;
+  margin-top: -16px;
+  margin-bottom: 20px;
 }
-
-.btn{
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../assets/images/American-flag-2a.jpg);
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    margin-top: 40px;
-    padding: 20px 50px;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 5px solid white;
-    box-shadow: -6px 6px 25px #888888;
+.btn {
+  position: relative;
+  background: var(--dark-color);
+  display: inline-block;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 5px;
 }
-
+.btn:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease-in-out;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 991px) {
+  .banner {
+    padding: 150px 50px 100px;
+    align-items: flex-start;
+  }
+  #profile-image {
+    height: 150px;
+    border-radius: 100%;
+  }
+  .banner h1 {
+      font-size: 52px;
+      color: white;
+      font-weight: 500;
+  }
+  .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    padding: 150px 20px 100px;
+  }
+  .banner h2 {
+    font-size: 2.5em;
+  }
+  .banner h3 {
+    font-size: 1em;
+  }
+}
 </style>
 
 <script>

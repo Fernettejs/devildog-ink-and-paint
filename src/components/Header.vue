@@ -1,291 +1,170 @@
 <template>
-  <!-- Top navigation -->
-  <div class="topnav">
+  <header>
+    <a href="#home" class="logo">Joe Fernette</a>
+    <Sidebar />
+    <Burger />
 
-    <!-- Centered link -->
-    <div class="topnav-centered">
-      <a href="#home">
-        <img ref="logo" class="logo" src="../assets/images/logo-white.png" alt="logo">
-      </a>
-    </div>
+    <ul class="menu">
+      <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu();">About</a></li>
+      <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+      <li><a href="#project" onclick="toggleMenu();">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
 
-    <!-- Left-aligned links (default) -->
-    <div class="topnav-left">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <router-link to="/tattoos">Tattoos</router-link>
-
-    </div>
-
-    <!-- Right-aligned links -->
-    <div class="topnav-right">
-      <a class="subnav">
-        <button href="#services" class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
-        <div class="subnav-content">
-          <a href="airbrush.html">Airbrush</a>
-          <a href="tattoo.html">Tattoo</a>
-          <a href="murals.html">Murals</a>
-          <a href="canvas.html">Canvas</a>
-        </div>
-      </a>
-      <a href="#contact" onclick="toggleMenu();" class="btn">Contact</a>
-
-    </div>
-
-
-
-
-
-
-    <!-- <header>
-        <div class="toggle" @click="toggleMenu();"></div>
-          <ul class="menu-left">
-              <li><a href="index.html" @click="toggleMenu();">Home</a></li>
-              <li><a href="#about" @click="toggleMenu();">About</a></li>
-          </ul>
-              <img ref="logo" class="logo" src="../assets/images/logo-white.png" alt="logo">
-              <a  href="#home" ></a>
-          <ul class="menu-right">
-              <div class="subnav">
-                  <button class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
-                  <div class="subnav-content">
-                    <a href="airbrush.html">Airbrush</a>
-                    <a href="#tattoo">Tattoo</a>
-                  </div>
-              </div>
-              <li><a href="#testimonials" @click="toggleMenu();">Testimonials</a></li>
-              <a href="#contact" @click="toggleMenu();" class="btn">Contact</a>
-              <li><a href="#contact" @click="toggleMenu();">Contact</a></li>
-          </ul>
-    </header> -->
-  </div>
+  </header>
 </template>
 
 <style scoped>
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  text-align: right;
 
-/* Add a black background color to the top navigation */
-.topnav {
-  position: relative;
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.jpg);
-  background-size: cover;
-  overflow: hidden;
-  height: 160px;
-  font-size: 32px;
-  border: 3px solid white;
 }
-
-.topnav-left {
-  margin-left: 80px;
+header.sticky {
+  background: rgb(225, 232, 247);
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 0.1);
 }
-.topnav-right {
-  margin-right: 80px;
-}
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin-top: 40px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background: var(--primary-color);
+header .logo {
   color: black;
-  border-radius: 4px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
-
-/* Add a color to the active/current link */
-/* .topnav a.active {
-  background: var(--primary-color);
-  color: white;
-  border-radius: 4px;
-} */
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 14px;
-  display: block;
-}
-
 .logo {
-  width: 200px;
-  margin-bottom: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.logo.sticky {
+  color: #111;
+  visibility: visible;
+  opacity: 1;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+header ul li a:hover {
+  text-decoration: underline;
+}
+header.sticky ul li a {
+  color: #111;
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-/* The navigation menu */
-  /* Navigation links */
-  
-  /* The subnavigation menu */
-  .subnav {
-    float: left;
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+    z-index: 1000;
   }
-  
-  /* Subnav button */
-  .subnav .subnavbtn {
-    border: none;
-    outline: none;
-    color: white;
-    margin: 0 20px;
-    background-color: inherit;
-    font-family: inherit;
-  }
-  
-  /* Add a red background color to navigation links on hover */
-  .header a:hover, .subnav:hover .subnavbtn {
-    background: var(--primary-color);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 5px;
-  }
-  
-  /* Style the subnav content - positioned absolute */
-  .subnav-content {
-    display: none;
-    position: absolute;
-    background: var(--primary-color);
-    border-radius: 5px;
-    z-index: 1;
-  }
-  
-  /* Style the subnav links */
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-    margin: 4px;
-  }
-  
-  /* Add a grey background color on hover */
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
     display: block;
+    padding: 100;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
-  .subnavbtn {
-    font-size: 32px;
-  }
-  .subnav:hover a {
-    font-size: 18px;
-  }
-
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-
-@media (max-width: 991px){
-  .logo {
-    width: 100px;
-  }
-  .topnav a {
-  font-size: 20px;
-  }
- .subnav:hover a {
-    font-size: 20px;
-  }
-  .subnavbtn {
-    font-size: 20px
-  }
-
-}
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
-  }
-
-
-  .topnav-centered a {
-    position: relative;
-    top: 0;
+  .menu.active {
     left: 0;
-    transform: none;
+  }
+  header ul li a {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  header .toggle {
+    filter: invert(1);
+  }
+  header.sticky .toggle {
+    filter: invert(0);
   }
 }
-
-/* header {
-    border-bottom: 2px solid var(--primary-color);
-    display: flex;
-    align-items: center;
-    height: 160px;
-    background: var(--secondary-color);
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media (max-width: 600px) {
+  header,
+  header.sticky {
+    padding: 20px 20px;
+    z-index: 1000;
+  }
 }
-.logo {
-    height: 150px;
-}
-header ul{
-    position: relative;
-    display: flex;
-}
-.menu-left {
-  flex: 2;
-}
-header ul li{
-    position: relative;
-    list-style: none;
-}
-header a{
-    position: relative;
-    display: inline-block;
-    margin: 0 20px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
-}
-header.sticky ul li a{
-color: #fff;
-} */
-
-/*  */
-/*  */
-/*  */
-
-
 </style>
 
 <script>
-import { TimelineLite } from 'gsap'
-export default { 
-  mounted() { 
-    const { logo } = this.$refs
-    const timeline = new TimelineLite() 
-    
-    timeline.from(logo, {duration: 2, y: '-100%', ease: 'bounce'})
+import Burger from "./Burger.vue";
+import Sidebar from "./Sidebar.vue";
+import { TimelineLite } from "gsap";
+import { gsap } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+gsap.registerPlugin(CSSPlugin);
+
+export default {
+  name: "app",
+  components: {
+    Burger,
+    Sidebar,
   },
-  toggleMenu(){
-    var menuToggle = document.querySelector('.toggle');
-    var menu = document.querySelector('.menu');
-    menuToggle.classList.toggle('active')
-    menu.classList.toggle('active')
-}
-} 
+  mounted() {
+    const { logo } = this.$refs;
+    const timeline = new TimelineLite();
 
-// import gsap from 'gsap'
+    timeline.from(logo, { duration: 2, y: "-100%", ease: "bounce" });
 
-// export default {
-//   name: "Header",
-//   methods: {
-//     function(){
-//       gsap.from('.logo', {duration: 2, y: '-100%', ease: 'bounce'})
-//     },
-//   funtion() {
-//     console.log("I hope this works.")
-//   }
-//   }
-// }
+    // Sticky Header
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector("header");
+      const logo = document.querySelector(".logo");
+      header.classList.toggle("sticky", window.scrollY > 0);
+      logo.classList.toggle("sticky", window.scrollY > 400);
+    });
+  },
+};
 </script>

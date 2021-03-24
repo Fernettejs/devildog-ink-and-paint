@@ -38,60 +38,56 @@ export default {
 
 <style>
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  font-family: futura, Verdana, sans-serif;
+  --light-color: rgb(225, 232, 247);
+  --dark-color: rgb(27, 51, 75);
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    text-align: center;
-    --primary-color:#8b0000;
-    --secondary-color:#202020;
-    --blue-color:#3C3B6E;
-    --white-color:#FEFEFE;
-    --gray-color:#CECECE;
+html, body {
+  overflow-x: hidden;
 }
-
 section {
-    padding: 100px;
+  padding: 100px;
 }
+h1 {
+  font-size: 100px;
+  color: white;
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  section {
+    padding: 100px 50px;
+  }
 
-h2 {
-    font-size: 3em;
-    color: white;
-}
+  .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .contentBox h3 {
+    font-size: 20px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .w50 {
+    margin-bottom: 20px;
+  }
 
-p {
-    color: white;
 }
-
-.line {
-    width: 100%;
-    height: 6px;
-    background: black;
-}
-.btn{
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(./assets/images/American-flag-2a.jpg);
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    margin-top: 40px;
-    padding: 20px 50px;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 5px solid white;
-    box-shadow: -6px 6px 25px #888888;
+@media (max-width: 600px) {
+  section {
+    padding: 100px 20px;
+  }
 }
 
 </style>
