@@ -11,7 +11,6 @@
       <li><a href="#project" onclick="toggleMenu();">Projects</a></li>
       <li><a href="#footer" onclick="toggleMenu();">Contact</a></li>
     </ul>
-
   </header>
 </template>
 
@@ -28,7 +27,6 @@ header {
   align-items: center;
   transition: 0.5s;
   text-align: right;
-
 }
 header.sticky {
   background: rgb(225, 232, 247);

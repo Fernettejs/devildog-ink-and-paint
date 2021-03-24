@@ -1,38 +1,57 @@
 <template>
-<section class="about" id="about">
+  <section class="about" id="about">
     <div class="heading">
-        <h2>About Me</h2>
+      <h2>About Me</h2>
     </div>
     <div class="content">
-        <div class="contentBox">
-            <h3>Who I am personaly and professionally</h3>
-            <p>I work hard to be successful in all that I do in order to provide for and protect my family. 
-                My path up to this point has been an exciting and fulfulling one. It has included becoming a United States Marine;
-                two combat deployments to Afghanistan; graduating from the University of Michigan with a bachelor's degree; 
-                starting my own Limited Liability Company with a main presence online; becoming a public safety officer; 
-                and now discovering the perfect career as a web developer. I am excited to take my drive into this career and
-                I don't plan on slowing down anytime soon.</p>
-            <br>
-            <p>I am an efficiency-driven, goal-oriented professional with problem-solving experience under a vast array 
-                of high-pressure environments. A self-starter with excellent communication, organizational and analytical skills. 
-                Demonstrated leadership skills, mentoring skills, risk assessment and management, and supervisory experience with 
-                a team of 26 personnel in the United States Marine Corps. Exceptional ability to carry out work with minimal 
-                supervision, attention to detail and the ability to work under strict deadlines. Strong verbal and written 
-                communication skills with the ability to interact with all levels of an organization. 
-                I have a great interest in what pushes people to be their best in any situation and I strive to come up with 
-                solutions to problems and improve myself and others everyday.</p>
-            <br>
-            <span>
-                <p>DRIVEN / PROBLEM SOLVER / LEADER / QUICK TO ADAPT / FOCUSED / TEAMWORK / INTEGRITY</p>
-            </span>
-
-        </div>
-        <div class="w50">
-            <img src="../assets/images/joe_family.jpg" alt="">
-        </div>
+      <div class="contentBox">
+        <h3>Who I am personally and professionally</h3>
+        <p>
+          I work hard to be successful in all that I do in order to provide for
+          and protect my family. My path up to this point has been an exciting
+          and fulfulling one. It has included becoming a United States Marine;
+          two combat deployments to Afghanistan; graduating from the University
+          of Michigan with a bachelor's degree; starting my own Limited
+          Liability Company with a main presence online; becoming a public
+          safety officer; and now discovering the perfect career as a web
+          developer. I am excited to take my drive into this career and I don't
+          plan on slowing down anytime soon.
+        </p>
+        <br />
+        <p>
+          I am an efficiency-driven, goal-oriented professional with
+          problem-solving experience under a vast array of high-pressure
+          environments. A self-starter with excellent communication,
+          organizational and analytical skills. Demonstrated leadership skills,
+          mentoring skills, risk assessment and management, and supervisory
+          experience with a team of 26 personnel in the United States Marine
+          Corps. Exceptional ability to carry out work with minimal supervision,
+          attention to detail and the ability to work under strict deadlines.
+          Strong verbal and written communication skills with the ability to
+          interact with all levels of an organization. I have a great interest
+          in what pushes people to be their best in any situation and I strive
+          to come up with solutions to problems and improve myself and others
+          everyday.
+        </p>
+        <br />
+        <span>
+          <p>
+            DRIVEN / PROBLEM SOLVER / LEADER / QUICK TO ADAPT / FOCUSED /
+            TEAMWORK / INTEGRITY
+          </p>
+        </span>
+      </div>
+      <div class="w50">
+        <img src="../assets/images/joe_family.jpg" alt="" />
+      </div>
     </div>
-    <a href="resources/Web Developer Resume 2021.pdf" target="_blank" class="btn">My Resume</a>
-</section>
+    <a
+      href="resources/Web Developer Resume 2021.pdf"
+      target="_blank"
+      class="btn"
+      >My Resume</a
+    >
+  </section>
 </template>
 
 <style scoped>

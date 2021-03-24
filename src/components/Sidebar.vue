@@ -1,5 +1,5 @@
 <template>
-<!-- CHANGE SIDEBAR TO COME DOWN FROM TOP INSTEAD OF SIDE -->
+  <!-- CHANGE SIDEBAR TO COME DOWN FROM TOP INSTEAD OF SIDE -->
   <div class="sidebar">
     <div
       class="sidebar-backdrop"

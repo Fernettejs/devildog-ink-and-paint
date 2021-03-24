@@ -29,8 +29,7 @@ import Social from "./Social.vue";
 export default {
   name: "app",
   components: {
-    Social
-  }
-}
+    Social,
+  },
+};
 </script>
-
