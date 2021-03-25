@@ -45,12 +45,12 @@
         <img src="../assets/images/joe_family.jpg" alt="" />
       </div>
     </div>
-    <a
+    <!-- <a
       href="resources/Web Developer Resume 2021.pdf"
       target="_blank"
       class="btn"
       >My Resume</a
-    >
+    > -->
   </section>
 </template>
 

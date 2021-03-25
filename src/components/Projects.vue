@@ -119,7 +119,7 @@
             </a>
         </div> -->
       <div class="projectBox">
-        <a href="resources/more_cowbell/index.html" target="_blank">
+        <a href="https://relaxed-meninsky-fb5c8c.netlify.app/" target="_blank">
           <img src="../assets/images/Cowbell.png" alt="" />
           <div class="projectText">
             <b>More Cowbell:</b> <br /><br />
