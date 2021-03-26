@@ -1,4 +1,4 @@
-# devildog-ink-and-paint
+# Joe Fernette's Web Dev Portfolio
 
 ## Project setup
 ```
