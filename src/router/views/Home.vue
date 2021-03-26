@@ -10,20 +10,15 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Banner from './components/Banner.vue'
-import About from './components/About.vue'
-import Services from './components/Services.vue'
-import Projects from './components/Projects.vue'
-import Footer from './components/Footer.vue'
-// import Tawk from 'vue-echo'
-  
-// Vue.use(Tawk, {
-//     tawkSrc: 'https://embed.tawk.to/6038be47385de407571a4c78/1eveqehid'
-// })
+import Header from "./components/Header.vue";
+import Banner from "./components/Banner.vue";
+import About from "./components/About.vue";
+import Services from "./components/Services.vue";
+import Projects from "./components/Projects.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Banner,
@@ -31,6 +26,6 @@ export default {
     Services,
     Projects,
     Footer,
-  }
-}
+  },
+};
 </script>
