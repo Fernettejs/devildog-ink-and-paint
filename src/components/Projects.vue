@@ -41,13 +41,22 @@
           >GitHub: JavaScript Car Game</a
         >
       </div>
-      <!-- <div class="projectBox">
-            <a href="resources/affirmation_api/index.html" target="_blank">
-                <img src="../assets/images/mountain_pink.jpg" alt="">
-                <div class="projectText"><b>Affimation API:</b> <br/><br/> Single page that pulls affirmations from an API and reads it outloud to the user.</div>
-            </a>
-            <a class="github-link" target="_blank" href="https://github.com/Fernettejs/affirmation_api">GitHub: Affimation API</a>
-        </div> -->
+      <div class="projectBox">
+        <a href="https://gifted-aryabhata-13f4ca.netlify.app/" target="_blank">
+          <img src="resources/images/mountain_pink.jpg" alt="" />
+          <div class="projectText">
+            <b>React Affirmation API:</b> <br /><br />
+            Single page that pulls affirmations from an API and reads it outloud
+            to the user.
+          </div>
+        </a>
+        <a
+          class="github-link"
+          target="_blank"
+          href="https://github.com/Fernettejs/affirmation-react-api"
+          >GitHub: React Affirmation API</a
+        >
+      </div>
       <div class="projectBox">
         <a href="https://clever-ride-8aae14.netlify.app/" target="_blank">
           <img src="../assets/images/American-flag-2a.png" alt="" />
