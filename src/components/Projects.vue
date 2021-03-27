@@ -11,6 +11,22 @@
     </div>
     <div class="content">
       <div class="projectBox">
+        <a href="https://gifted-aryabhata-13f4ca.netlify.app/" target="_blank">
+          <img src="../assets/images/mountain_pink.jpg" alt="" />
+          <div class="projectText">
+            <b>React Affirmation API:</b> <br /><br />
+            Single page that pulls affirmations from an API and reads it outloud
+            to the user.
+          </div>
+        </a>
+        <a
+          class="github-link"
+          target="_blank"
+          href="https://github.com/Fernettejs/affirmation-react-api"
+          >GitHub: React Affirmation API</a
+        >
+      </div>
+      <div class="projectBox">
         <a href="http://backfirstresponders.github.io/" target="_blank">
           <img src="../assets/images/alex_banner.jpg" alt="" />
           <div class="projectText">
@@ -39,22 +55,6 @@
           target="_blank"
           href="https://github.com/Fernettejs/js-game"
           >GitHub: JavaScript Car Game</a
-        >
-      </div>
-      <div class="projectBox">
-        <a href="https://gifted-aryabhata-13f4ca.netlify.app/" target="_blank">
-          <img src="resources/images/mountain_pink.jpg" alt="" />
-          <div class="projectText">
-            <b>React Affirmation API:</b> <br /><br />
-            Single page that pulls affirmations from an API and reads it outloud
-            to the user.
-          </div>
-        </a>
-        <a
-          class="github-link"
-          target="_blank"
-          href="https://github.com/Fernettejs/affirmation-react-api"
-          >GitHub: React Affirmation API</a
         >
       </div>
       <div class="projectBox">
