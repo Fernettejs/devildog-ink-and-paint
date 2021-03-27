@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Joe Fernette Portfolio
+=======
+# Joe Fernette's Web Dev Portfolio
+>>>>>>> d4b8bc956f779f7f6559983914e8937282bf6c93
 
 ## Project setup
 ```
