@@ -58,7 +58,7 @@
         >
       </div>
       <div class="projectBox">
-        <a href="https://clever-ride-8aae14.netlify.app/" target="_blank">
+        <a href="https://www.devildoginkandpaint.com/" target="_blank">
           <img src="../assets/images/American-flag-2a.png" alt="" />
           <div class="projectText">
             <b>DevilDog Ink and Paint</b> <br /><br />Vue.js with multiple
